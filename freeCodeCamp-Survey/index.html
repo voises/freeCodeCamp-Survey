@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Moises' Art Club </h1>
+        <p id="description">Thank you for your interest in my art club. Please fill in the relevant information to register</p>
+    </header>
+    <main id="main">
+        <form id="survey-form" action="">
+            <label id="name-label" for="name">Your name (or nickname)*</label><br>
+            <input type="text" id="name" placeholder="Enter your name here" pattern="[^0-9]{1,}" title="Please enter a valid name" required><br>
+            <label id="email-label" for="email">Email*</label><br>
+            <input type="email" id="email" placeholder="Enter your email here" pattern="[a-z0-9._%+-]+@[a-z0-9._%+-]+\.[a-z]{2,}$" title="Email must be in the user@email.com format" required><br>
+            <label id="number-label" for="number">Your age (optional)</label><br>
+            <input type="number" id="number" placeholder="Enter your age here" min="16" max="99" title="You must be 16+ to join"><br>
+            <label for="dropdown">What is your favorite period for art?*</label><br>
+            <select id="dropdown">
+                <option value="ancient">Ancient</option>
+                <option value="middle-ages">Middle Ages</option>
+                <option value="renaissance">Renaissance</option>
+                <option value="baroque">Baroque</option>
+                <option value="romanticism">Romanticism</option>
+                <option value="impressionism">Impressionism</option>
+                <option value="abstract">Abstract</option>
+                <option value="modern">Modern</option>
+            </select>
+            <fieldset id="radio">
+                <legend>What is your favorite medium of art?*</legend>
+                <input type="radio" id="paint" name="choices" value="paint" checked>
+                <label for="paint">Painting and drawing</label><br>
+                <input type="radio" id="sculpture" name="choices" value="sculpture" checked>
+                <label for="sculpture">Sculpture</label><br>
+                <input type="radio" id="photo" name="choices" value="photo" checked>
+                <label for="photo">Photo</label><br>
+                <input type="radio" id="mixed" name="choices" value="mixed">
+                <label for="mixed">Mixed</label>
+            </fieldset>
+            <fieldset id="checkbox">
+                <legend>Who are your favorite artists?*</legend>
+                <input type="checkbox" id="bosch" name="checks" value="bosch">
+                <label for="bosch">Hieronymus Bosch</label><br>
+                <input type="checkbox" id="masaccio" name="checks" value="masaccio">
+                <label for="masaccio">Masaccio</label><br>
+                <input type="checkbox" id="raphael" name="checks" value="raphael">
+                <label for="raphael">Raphael</label><br>
+                <input type="checkbox" id="angelico" name="checks" value="angelico">
+                <label for="angelico">Fra Angelico</label><br>
+                <input type="checkbox" id="duchamp" name="checks" value="duchamp">
+                <label for="duchamp">Marcel Duchamp</label><br>
+                <input type="checkbox" id="davinci" name="checks" value="davinci">
+                <label for="davinci">Leonardo Davinci</label><br>
+                <input type="checkbox" id="rembrandt" name="checks" value="rembrandt">
+                <label for="rembrandt">Rembrandt</label><br>
+                <input type="checkbox" id="rothko" name="checks" value="rothko">
+                <label for="rothko">Mark Rothko</label><br>
+                <input type="checkbox" id="gogh" name="checks" value="gogh">
+                <label for="gogh">Vincent van Gogh</label><br>
+                <input type="checkbox" id="picasso" name="checks" value="picasso">
+                <label for="picasso">Pablo Picasso</label><br>
+                <input type="checkbox" id="magritte" name="checks" value="magritte">
+                <label for="magritte">René Magritte</label>
+            </fieldset>
+            <label for="comment">Any comments or suggestions?</label><br>
+            <textarea name="textarea" id="comment" placeholder="Enter your comment here..."></textarea><br>
+            <button id="submit" type="submit">
+                submit
+            </button>
+        </form>
+        <p id="note">
+            * indicates a required field
+        </p>
+    </main>
+    
+</body>
